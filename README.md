@@ -1,6 +1,8 @@
 # protractor-cucumber-tests
 Testing Protractor + Cucumber tests
 
+This repository contains code for first steps on protractor [http://www.protractortest.org/#/](http://www.protractortest.org/#/)  and the tutorial [http://www.protractortest.org/#/tutorial](http://www.protractortest.org/#/tutorial)
+
 ## Setup
 
 1. Install protractor `npm install -g protractor`
