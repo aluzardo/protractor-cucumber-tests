@@ -6,20 +6,28 @@ var expect = chai.expect;
 
 chai.use(chaiAsPromised);
 
+var AngularJsPage = require('../page_objects/angularjs.page');
+
 module.exports = function () {
 
-    this.Then(/^I should be able to add a todo$/, function (next) {
-        element(by.model('todoList.todoText')).sendKeys('write first protractor test');
-        element(by.css('[value="add"]')).click();
+    var angularJsPage;
 
-        var todoList = element.all(by.repeater('todo in todoList.todos'));
+    this.Before(function () {
+        angularJsPage = new AngularJsPage();
+    });
+
+    this.Then(/^I should be able to add a todo$/, function (next) {
+        angularJsPage.setTodoText('write first protractor test');
+        angularJsPage.clickAddTodo();
+
+        var todoList = angularJsPage.getTodoList();
+
         expect(todoList.count()).to.eventually.equal(3);
         expect(todoList.get(2).getText()).to.eventually.equal('write first protractor test');
 
-        // You wrote your first test, cross it off the list
         todoList.get(2).element(by.css('input')).click();
-        var completedAmount = element.all(by.css('.done-true'));
-        expect(completedAmount.count()).to.eventually.equal(2);
+
+        expect(angularJsPage.getCompleteAmount().count()).to.eventually.equal(2);
         next();
     });
 };
