@@ -1,0 +1,26 @@
+{
+  "name": "protractor-cucumber-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "conf.js",
+  "scripts": {
+    "test": "protractor conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aluzardo/protractor-cucumber-tests.git"
+  },
+  "author": "Adolfo Luzardo Cabrera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aluzardo/protractor-cucumber-tests/issues"
+  },
+  "homepage": "https://github.com/aluzardo/protractor-cucumber-tests#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "cucumber": "^0.10.2",
+    "protractor": "^3.2.2",
+    "protractor-cucumber-framework": "^0.5.0"
+  }
+}

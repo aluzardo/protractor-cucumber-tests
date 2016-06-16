@@ -21,4 +21,4 @@ Tests are inside the folder [specs](specs/)
 
 ## Run the test
 
-Run the test with: `protractor conf.js`
+Run the test with: `npm test`
