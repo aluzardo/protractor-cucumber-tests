@@ -14,9 +14,26 @@ exports.config = {
     
     seleniumAddress: 'http://localhost:4444/wd/hub',
     specs: ['features/*.feature'],
-    multiCapabilities: [{
-        browserName: 'firefox'
-    }, {
-        browserName: 'chrome'
-    }]
+    multiCapabilities: [
+        {
+            browserName: 'firefox'
+        }, {
+            browserName: 'safari'
+        }, {
+            browserName: 'chrome'
+        }, {
+            browserName: 'chrome',
+            // List of devices https://cs.chromium.org/chromium/src/chrome/test/chromedriver/chrome/mobile_device_list.cc
+            'deviceName': 'Google Nexus 5'
+        }, {
+            browserName: 'chrome',
+            'deviceName': 'Apple iPhone 6'
+        }, {
+            browserName: 'chrome',
+            'deviceName': 'Apple iPad'
+        }, {
+            browserName: 'chrome',
+            'deviceName': 'Samsung Galaxy S4'
+        }
+    ]
 };
