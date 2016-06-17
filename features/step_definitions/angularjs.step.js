@@ -6,14 +6,19 @@ var expect = chai.expect;
 
 chai.use(chaiAsPromised);
 
-var AngularJsPage = require('../page_objects/angularjs.page');
+var AngularJsSteps = function () {
 
-module.exports = function () {
-
+    var AngularJsPage = require('../page_objects/angularjs.page');
     var angularJsPage;
+    
 
     this.Before(function () {
         angularJsPage = new AngularJsPage();
+    });
+
+    this.Given(/^The AngularJS website is open$/, function (callback) {
+        angularJsPage.get();
+        callback();
     });
 
     this.Then(/^I should be able to add a todo$/, function (next) {
@@ -31,3 +36,5 @@ module.exports = function () {
         next();
     });
 };
+
+module.exports = AngularJsSteps;

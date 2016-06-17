@@ -17,9 +17,10 @@ exports.config = {
     multiCapabilities: [
         {
             browserName: 'firefox'
-        }, {
+        }, /* TODO Safari is randomly failing (necessary restart safari and selenium server)
+        {
             browserName: 'safari'
-        }, {
+        },*/ {
             browserName: 'chrome'
         }, {
             browserName: 'chrome',

@@ -3,5 +3,5 @@ Feature: Using AngularJs website
   I should be able to add a todo
 
   Scenario: Check the To-do feature
-    Given I go on "https://angularjs.org"
+    Given The AngularJS website is open
     Then I should be able to add a todo

@@ -6,7 +6,8 @@ var expect            = chai.expect;
 
 chai.use(chaiAsPromised);
 
-module.exports = function () {
+var UtilSteps  = function () {
+    
     this.Given(/^I go on "([^"]*)"$/, function (url, next) {
         browser.get(url);
         next();
@@ -17,3 +18,5 @@ module.exports = function () {
         next();
     });
 };
+
+module.exports = UtilSteps;

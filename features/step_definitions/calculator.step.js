@@ -6,14 +6,20 @@ var expect = chai.expect;
 
 chai.use(chaiAsPromised);
 
-var CalculatorPage = require('../page_objects/calculator.page');
 
-module.exports = function () {
 
+var CalculatorSteps = function () {
+
+    var CalculatorPage = require('../page_objects/calculator.page');
     var calculatorPage;
 
     this.Before(function () {
         calculatorPage = new CalculatorPage();
+    });
+
+    this.Given(/^The Calculator is open$/, function (callback) {
+        calculatorPage.get();
+        callback();
     });
 
     this.Then(/^Add "([^"]*)" \+ "([^"]*)" = "([^"]*)"$/, function (number1, number2, number3, next) {
@@ -47,3 +53,5 @@ module.exports = function () {
     });
    
 };
+
+module.exports = CalculatorSteps;
