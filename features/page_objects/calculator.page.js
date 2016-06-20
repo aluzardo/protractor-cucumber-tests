@@ -10,7 +10,7 @@ var CalculatorPage = function() {
 
 
     this.get = function() {
-        browser.get('http://juliemr.github.io/protractor-demo/');
+        browser.get('http://aluzardo.github.io/protractor-demo/');
     };
 
     this.add = function(numberA, numberB) {
