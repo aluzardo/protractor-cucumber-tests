@@ -4,7 +4,7 @@
   "description": "",
   "main": "conf.js",
   "scripts": {
-    "test":"protractor conf.js & protractor conf-appium.js",
+    "test":"protractor conf.js & protractor conf-appium.js & protractor conf-appium-1.js",
     "test-browsers": "protractor conf.js",
     "test-real-devices":"protractor conf-appium.js"
   },

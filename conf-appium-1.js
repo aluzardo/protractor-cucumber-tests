@@ -12,13 +12,13 @@ exports.config = {
         format: "pretty"
     },
 
-    seleniumAddress: 'http://localhost:4723/wd/hub',
+    seleniumAddress: 'http://localhost:4747/wd/hub',
     specs: ['features/*.feature'],
     capabilities: {
         browserName: 'chrome',
         'appium-version': '1.5.3',
         platformName: 'Android',
-        platformVersion: '5.0.2',
-        deviceName: '33005bd56ac6c223'
+        platformVersion: '4.2.2',
+        deviceName: '30048664b980c100'
     }
 };
