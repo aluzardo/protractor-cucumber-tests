@@ -22,3 +22,12 @@ Tests are inside the folder [specs](specs/)
 ## Run the test
 
 Run the test with: `npm test`
+
+## Links
+
+1. https://github.com/angular/protractor
+2. https://github.com/cucumber/cucumber-js
+3. https://github.com/appium/appium
+4. https://github.com/angular/protractor/blob/master/docs/page-objects.md
+
+
