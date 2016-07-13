@@ -12,13 +12,17 @@ exports.config = {
         format: "pretty"
     },
 
-    seleniumAddress: 'http://localhost:4723/wd/hub',
+    seleniumAddress: 'http://localhost:4725/wd/hub',
     specs: ['features/*.feature'],
     capabilities: {
-        browserName: 'chrome',
+        browserName: 'safari',
+        bundleId:'SafariLauncher',
         'appium-version': '1.5.3',
-        platformName: 'Android',
-        platformVersion: '5.0.2',
-        deviceName: '33005bd56ac6c223'
+        platformName: 'iOS',
+        deviceName: 'Mavrix Test iPad4',
+        'udid': '39d39a8bf0d6635268e5997dae574c04246f5e2b'
+
     }
 };
+
+

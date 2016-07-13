@@ -4,9 +4,11 @@
   "description": "",
   "main": "conf.js",
   "scripts": {
-    "test":"protractor conf.js & protractor conf-appium.js & protractor conf-appium-1.js",
+    "test": "protractor conf.js & protractor conf-appium-ipad4.js & protractor conf-appium-galaxytabmini.js & protractor conf-appium-galaxytabs2.js",
     "test-browsers": "protractor conf.js",
-    "test-real-devices":"protractor conf-appium.js"
+    "test-real-devices": "protractor conf-appium-ipad4.js & protractor conf-appium-galaxytabmini.js & protractor conf-appium-galaxytabs2.js",
+    "test-android": "protractor conf-appium-galaxytabmini.js & protractor conf-appium-galaxytabs2.js",
+    "test-ios": "protractor conf-appium-ipad4.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +24,7 @@
     "chai": "^3.5.0",
     "chai-as-promised": "^5.3.0",
     "cucumber": "^0.10.2",
-    "protractor": "^3.2.2",
+    "protractor": "^4.0.0",
     "protractor-cucumber-framework": "^0.5.0"
   }
 }
