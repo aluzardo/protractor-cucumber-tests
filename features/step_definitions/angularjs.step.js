@@ -1,12 +1,8 @@
 'use strict';
 
-var chai = require('chai');
-var chaiAsPromised = require('chai-as-promised');
-var expect = chai.expect;
-
-chai.use(chaiAsPromised);
-
 var AngularJsSteps = function () {
+
+    this.World = require("../support/world.js").World;
 
     var AngularJsPage = require('../page_objects/angularjs.page');
     var angularJsPage;
@@ -27,13 +23,12 @@ var AngularJsSteps = function () {
 
         var todoList = angularJsPage.getTodoList();
 
-        expect(todoList.count()).to.eventually.equal(3);
-        expect(todoList.get(2).getText()).to.eventually.equal('write first protractor test');
+        this.expect(todoList.count()).to.eventually.equal(3).and.notify(next);
+        this.expect(todoList.get(2).getText()).to.eventually.equal('write first protractor test').and.notify(next);
 
         todoList.get(2).element(by.css('input')).click();
 
-        expect(angularJsPage.getCompleteAmount().count()).to.eventually.equal(2);
-        next();
+        this.expect(angularJsPage.getCompleteAmount().count()).to.eventually.equal(2).and.notify(next);
     });
 };
 

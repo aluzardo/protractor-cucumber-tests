@@ -8,7 +8,7 @@ exports.config = {
 
     // relevant cucumber command line options
     cucumberOpts: {
-        require: 'features/step_definitions/*.step.js',
+        require: ['features/step_definitions/*.step.js', 'features/support/*.js'],
         format: "pretty",
         tags:  "@critical"
     },

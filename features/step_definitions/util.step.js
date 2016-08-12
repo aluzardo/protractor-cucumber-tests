@@ -1,12 +1,8 @@
 'use strict';
 
-var chai              = require('chai');
-var chaiAsPromised    = require('chai-as-promised');
-var expect            = chai.expect;
-
-chai.use(chaiAsPromised);
-
 var UtilSteps  = function () {
+
+    this.World = require("../support/world.js").World;
     
     this.Given(/^I go on "([^"]*)"$/, function (url, next) {
         browser.get(url);
@@ -14,7 +10,7 @@ var UtilSteps  = function () {
     });
 
     this.Then(/^The title should be equal "([^"]*)"$/, function (title,next) {
-        expect(browser.getTitle()).to.eventually.equal(title);
+        this.expect(browser.getTitle()).to.eventually.equal(title).and.notify(next);
         next();
     });
 };
