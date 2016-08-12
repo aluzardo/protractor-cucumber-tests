@@ -9,7 +9,8 @@ exports.config = {
     // relevant cucumber command line options
     cucumberOpts: {
         require: 'features/step_definitions/*.step.js',
-        format: "pretty"
+        format: "pretty",
+        tags:  "@critical"
     },
 
     seleniumAddress: 'http://localhost:4724/wd/hub',
@@ -18,6 +19,6 @@ exports.config = {
         browserName: 'chrome',
         'appium-version': '1.5.3',
         platformName: 'Android',
-        deviceName: '30048664b980c100'
+        deviceName: 'XXX'
     }
 };

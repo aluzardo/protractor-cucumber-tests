@@ -9,7 +9,8 @@ exports.config = {
     // relevant cucumber command line options
     cucumberOpts: {
         require: 'features/step_definitions/*.step.js',
-        format: "pretty"
+        format: "pretty",
+        tags:  "@critical"
     },
 
     seleniumAddress: 'http://localhost:4725/wd/hub',
@@ -19,8 +20,8 @@ exports.config = {
         bundleId:'SafariLauncher',
         'appium-version': '1.5.3',
         platformName: 'iOS',
-        deviceName: 'Mavrix Test iPad4',
-        'udid': '39d39a8bf0d6635268e5997dae574c04246f5e2b'
+        deviceName: 'Test iPad4',
+        'udid': 'XXX'
 
     }
 };
