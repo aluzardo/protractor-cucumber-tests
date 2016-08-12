@@ -5,19 +5,9 @@ This repository contains code for first steps on protractor [http://www.protract
 
 ## Setup
 
-0. Install nodejs brew install node`
-
-1. Install protractor `npm install -g protractor`
-2. Try running `protractor --version` to make sure it's working.
-3. Install webdriver manager `webdriver-manager update`
-4. Start up a server `webdriver-manager start`
-5. Try [http://localhost:4444/wd/hub](http://localhost:4444/wd/hub) to make sure Selenium Server is running.
-
-To test using Real Devices
-
-6. Install appium `npm install -g appium`
-7. Install client `npm install wd`
-8. Run appium server `appium &` or `appium -p 4725` to specify a port
+0. Install nodejs `brew install node`
+1. Install modules `npm install`
+3. Run all servers `npm run start-servers`
 
 ## Configuration
 
