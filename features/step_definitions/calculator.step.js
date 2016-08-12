@@ -25,20 +25,14 @@ var CalculatorSteps = function () {
     this.Then(/^The history should contain the previous operations$/, function (next) {
         calculatorPage.add(1, 2);
         calculatorPage.add(3, 4);
-        var history = calculatorPage.getHistory();
-        this.expect(history.count()).to.eventually.equal(2).and.notify(next);
-
-        calculatorPage.add(5, 6);
-
-        this.expect(history.count()).to.eventually.equal(3).and.notify(next);
+        this.expect(calculatorPage.getHistory().count()).to.eventually.equal(2).and.notify(next);
     });
 
     this.Then(/^The last and the fist operation should match$/, function (next) {
         calculatorPage.add(1, 2);
         calculatorPage.add(3, 4);
-        
         var history = calculatorPage.getHistory();
-        this.expect(history.last().getText()).to.eventually.contains('1 + 2').and.notify(next);
+        this.expect(history.last().getText()).to.eventually.contains('1 + 2');
         this.expect(history.first().getText()).to.eventually.contains('3 + 4').and.notify(next);
 
     });

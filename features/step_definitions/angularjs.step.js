@@ -23,8 +23,8 @@ var AngularJsSteps = function () {
 
         var todoList = angularJsPage.getTodoList();
 
-        this.expect(todoList.count()).to.eventually.equal(3).and.notify(next);
-        this.expect(todoList.get(2).getText()).to.eventually.equal('write first protractor test').and.notify(next);
+        this.expect(todoList.count()).to.eventually.equal(3);
+        this.expect(todoList.get(2).getText()).to.eventually.equal('write first protractor test');
 
         todoList.get(2).element(by.css('input')).click();
 
