@@ -47,6 +47,22 @@ Run only test on real android devices: `protractor conf-appium-galaxytabmini.js 
 
 Run only test on real ios devices: `protractor conf-appium-ipad4.js`
 
+The test can be tagged as:
+
+- critical - core functionality
+- high - important to be fixed
+- low - nice but can wait to be fixed
+
+Only the critical test will be run if you use the previous commands. 
+
+If you want to run high or low test you need use this command at the end:
+
+
+`-- --cucumberOpts.tags @tag` Replace @tag for the tag.
+
+For example: `npm test -- --cucumberOpts.tags @low`
+
+
 ## Links
 
 1. https://github.com/angular/protractor

@@ -9,22 +9,23 @@ exports.config = {
     // relevant cucumber command line options
     cucumberOpts: {
         require: 'features/step_definitions/*.step.js',
-        format: "pretty"
+        format: "pretty",
+        tags:  "@critical"
     },
 
-    seleniumAddress: 'http://localhost:4444/wd/hub',
+    seleniumAddress: 'https://selenium.ramson.io/wd/hub',
     specs: ['features/*.feature'],
-    multiCapabilities: [
+    multiCapabilities: [/*
         {
             browserName: 'firefox'
         },
-        /* TODO Safari is randomly failing (necessary restart safari and selenium server)
+    //TODO Safari is randomly failing (necessary restart safari and selenium server)
          {
          browserName: 'safari'
          },*/
         {
             browserName: 'chrome'
-        },
+        }/*,
         {
             browserName: 'chrome',
             // List of devices https://cs.chromium.org/chromium/src/chrome/test/chromedriver/chrome/mobile_device_list.cc
@@ -41,6 +42,7 @@ exports.config = {
         {
             browserName: 'chrome',
             'deviceName': 'Samsung Galaxy S4'
-        }
-    ]
+        }*/
+    ],
+    maxSessions: 1
 };
