@@ -39,13 +39,13 @@ The test done using protractor, cucumber and page object.
 
 Run all the test with: `npm test`
 
-Run only test on desktop browsers: `protractor conf.js`
+Run only test on desktop browsers: `npm run test-desktop`
 
-Run only test on real devices: `protractor conf-appium-ipad4.js & protractor conf-appium-galaxytabmini.js & protractor conf-appium-galaxytabs2.js`
+Run only test on real devices: `npm run test-real-devices`
 
-Run only test on real android devices: `protractor conf-appium-galaxytabmini.js & protractor conf-appium-galaxytabs2.js`
+Run only test on real android devices: `npm run test-android`
 
-Run only test on real ios devices: `protractor conf-appium-ipad4.js`
+Run only test on real ios devices: `npm run test-ios`
 
 The test can be tagged as:
 
@@ -61,7 +61,7 @@ If you want to run high or low test you need use this command at the end:
 `-- --cucumberOpts.tags @tag` Replace @tag for the tag.
 
 For example: `npm test -- --cucumberOpts.tags @low`
-
+#2 Update libraries and create scripts
 
 ## Links
 

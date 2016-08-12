@@ -4,7 +4,12 @@
   "description": "",
   "main": "conf.js",
   "scripts": {
-    "test": "protractor conf.js & protractor conf-appium-ipad4.js & protractor conf-appium-galaxytabmini.js & protractor conf-appium-galaxytabs2.js"
+    "start-servers": "webdriver-manager update && (webdriver-manager start &) & (appium -p 4725 &)  & (appium -p 4724 &) & (appium -p 4723 &)",
+    "test": "protractor conf.js && protractor conf-appium-ipad4.js && protractor conf-appium-galaxytabmini.js && protractor conf-appium-galaxytabs2.js",
+    "test-desktop": "protractor conf.js",
+    "test-real-devices": " protractor conf-appium-ipad4.js && protractor conf-appium-galaxytabmini.js && protractor conf-appium-galaxytabs2.js",
+    "test-android": "protractor conf-appium-galaxytabmini.js && protractor conf-appium-galaxytabs2.js",
+    "test-ios": "protractor conf-appium-ipad4.js"
   },
   "repository": {
     "type": "git",
@@ -17,10 +22,11 @@
   },
   "homepage": "https://github.com/aluzardo/protractor-cucumber-tests#readme",
   "devDependencies": {
+    "appium": "^1.5.3",
     "chai": "^3.5.0",
     "chai-as-promised": "^5.3.0",
-    "cucumber": "^0.10.2",
-    "protractor": "^4.0.0",
-    "protractor-cucumber-framework": "^0.5.0"
+    "cucumber": "^1.2.1",
+    "protractor": "^4.0.2",
+    "protractor-cucumber-framework": "^0.6.0"
   }
 }
