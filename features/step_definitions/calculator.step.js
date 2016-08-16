@@ -32,11 +32,17 @@ var CalculatorSteps = function () {
         calculatorPage.add(1, 2);
         calculatorPage.add(3, 4);
         var history = calculatorPage.getHistory();
-        this.expect(history.last().getText()).to.eventually.contains('1 + 2');
-        this.expect(history.first().getText()).to.eventually.contains('3 + 4').and.notify(next);
+        var scope = this;
+        this.expect(history.last().getText()).to.eventually.contains('1 + 2')
+            .then(function () {
+                scope.expect(history.first().getText()).to.eventually.contains('3 + 4').and.notify(next);
+            }, function (error) {
+                scope.notify(next(error));
+            });
+
 
     });
-   
+
 };
 
 module.exports = CalculatorSteps;
