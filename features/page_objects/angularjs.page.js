@@ -2,14 +2,16 @@
 
 var AngularJsPage = function() {
 
-    var todoText = element(by.model('todoList.todoText'));
-    var todoButton= element(by.css('[value="add"]'));
-    var todoList = element.all(by.repeater('todo in todoList.todos'));
-    var completedAmount = element.all(by.css('.done-true'));
+    var json = require('../json/angularjs.json');
+
+    var todoText = element(by.model(json.locators.todoText.model));
+    var todoButton= element(by.css(json.locators.todoButton.css));
+    var todoList = element.all(by.repeater(json.locators.todoList.repeater));
+    var completedAmount = element.all(by.css(json.locators.completedAmount.css));
 
 
     this.get = function() {
-        browser.get('https://angularjs.org');
+        browser.get(json.siteURL);
     };
 
     this.setTodoText = function(text) {

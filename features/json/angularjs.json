@@ -1,0 +1,17 @@
+{
+  "siteURL": "https://angularjs.org",
+  "locators": {
+    "todoText": {
+      "model": "todoList.todoText"
+    },
+    "todoButton": {
+      "css": "[value='add']"
+    },
+    "todoList": {
+      "repeater": "todo in todoList.todos"
+    },
+    "completedAmount": {
+      "css": ".done-true"
+    }
+  }
+}

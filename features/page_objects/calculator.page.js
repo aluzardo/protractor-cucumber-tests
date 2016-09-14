@@ -2,15 +2,17 @@
 
 var CalculatorPage = function() {
 
-    var firstNumber = element(by.model('first'));
-    var secondNumber = element(by.model('second'));
-    var goButton = element(by.id('gobutton'));
-    var latestResult = element(by.binding('latest'));
-    var history = element.all(by.repeater('result in memory'));
+    var json = require('../json/calculator.json');
+
+    var firstNumber = element(by.model(json.locators.firstNumber.model));
+    var secondNumber = element(by.model(json.locators.secondNumber.model));
+    var goButton = element(by.id(json.locators.goButton.id));
+    var latestResult = element(by.binding(json.locators.latestResult.binding));
+    var history = element.all(by.repeater(json.locators.history.repeater));
 
 
     this.get = function() {
-        browser.get('http://aluzardo.github.io/protractor-demo/');
+        browser.get(json.siteURL);
     };
 
     this.add = function(numberA, numberB) {

@@ -1,0 +1,20 @@
+{
+  "siteURL": "http://aluzardo.github.io/protractor-demo/",
+  "locators": {
+    "firstNumber": {
+      "model": "first"
+    },
+    "secondNumber": {
+      "model": "second"
+    },
+    "goButton": {
+      "id": "gobutton"
+    },
+    "latestResult": {
+      "binding": "latest"
+    },
+    "history": {
+      "repeater": "result in memory"
+    }
+  }
+}
