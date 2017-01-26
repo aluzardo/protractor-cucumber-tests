@@ -44,5 +44,6 @@ exports.config = {
             'deviceName': 'Samsung Galaxy S4'
         }*/
     ],
-    maxSessions: 1
+    maxSessions: 1,
+    resultJsonOutputFile: 'reports/' + Date.now() + '-protractor-report.json'
 };

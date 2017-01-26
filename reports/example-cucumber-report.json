@@ -1,0 +1,455 @@
+[
+  {
+    "description": "  As a user of Calculator Page\n  I should be able to see the title",
+    "elements": [
+      {
+        "id": "using-calculator-and-check-the-title;check-the-calculator-title",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Check the Calculator title",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 3715979
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/step_definitions/angularjs.step.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 1696327
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/step_definitions/calculator.step.js:10"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "The Calculator is open",
+            "result": {
+              "status": "passed",
+              "duration": 48533387
+            },
+            "line": 7,
+            "match": {
+              "location": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/step_definitions/calculator.step.js:14"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "The title should be equal \"Super Calculator\"",
+            "result": {
+              "status": "passed",
+              "duration": 6141180
+            },
+            "line": 8,
+            "match": {
+              "location": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/step_definitions/util.step.js:12"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 468299
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/support/cucumber.hooks.js:9"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@critical",
+            "line": 5
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "using-calculator-and-check-the-title",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Using Calculator and check the title",
+    "tags": [],
+    "uri": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/calculator.feature"
+  },
+  {
+    "description": "  As a user of Calculator Page\n  I should be able to add numbers",
+    "elements": [
+      {
+        "id": "using-calculator-and-check-if-it-is-working-properly;should-add-one-and-two",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Should add one and two",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 418606
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/step_definitions/angularjs.step.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 754313
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/step_definitions/calculator.step.js:10"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I go on \"http://aluzardo.github.io/protractor-demo/\"",
+            "result": {
+              "status": "passed",
+              "duration": 11472934
+            },
+            "line": 7,
+            "match": {
+              "location": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/step_definitions/util.step.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Add \"1\" + \"2\" = \"3\"",
+            "result": {
+              "status": "passed",
+              "duration": 3274531274
+            },
+            "line": 8,
+            "match": {
+              "location": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/step_definitions/calculator.step.js:19"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 41718
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/support/cucumber.hooks.js:9"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@critical",
+            "line": 5
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "using-calculator-and-check-if-it-is-working-properly",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Using Calculator and check if it is working properly",
+    "tags": [],
+    "uri": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/interacting-elements.feature"
+  },
+  {
+    "description": "  As a user of Calculator Page\n  I should be able to add operations.\n  This operations should be stored on a history.",
+    "elements": [
+      {
+        "id": "using-calculator-and-check-if-the-history-is-working-properly;the-calculator-history-should-work-properly",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "The calculator history should work properly",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 193935
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/step_definitions/angularjs.step.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 155397
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/step_definitions/calculator.step.js:10"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I go on \"http://aluzardo.github.io/protractor-demo/\"",
+            "result": {
+              "status": "passed",
+              "duration": 2846362
+            },
+            "line": 8,
+            "match": {
+              "location": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/step_definitions/util.step.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "The history should contain the previous operations",
+            "result": {
+              "status": "passed",
+              "duration": 4855474205
+            },
+            "line": 9,
+            "match": {
+              "location": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/step_definitions/calculator.step.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "The last and the fist operation should match",
+            "result": {
+              "status": "passed",
+              "duration": 4338323599
+            },
+            "line": 10,
+            "match": {
+              "location": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/step_definitions/calculator.step.js:31"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 70003
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/support/cucumber.hooks.js:9"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@critical",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "using-calculator-and-check-if-the-history-is-working-properly",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Using Calculator and check if the history is working properly",
+    "tags": [],
+    "uri": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/list-elements.feature"
+  },
+  {
+    "description": "  As a user of Calculator Page\n  I should be able to see the title",
+    "elements": [
+      {
+        "id": "using-calculator-and-check-the-title;check-the-calculator-title",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Check the Calculator title",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 165559
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/step_definitions/angularjs.step.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 195427
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/step_definitions/calculator.step.js:10"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I go on \"http://aluzardo.github.io/protractor-demo/\"",
+            "result": {
+              "status": "passed",
+              "duration": 2339923
+            },
+            "line": 7,
+            "match": {
+              "location": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/step_definitions/util.step.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "The title should be equal \"Super Calculator\"",
+            "result": {
+              "status": "passed",
+              "duration": 1033106
+            },
+            "line": 8,
+            "match": {
+              "location": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/step_definitions/util.step.js:12"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 191117
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/support/cucumber.hooks.js:9"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@critical",
+            "line": 5
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "using-calculator-and-check-the-title",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Using Calculator and check the title",
+    "tags": [],
+    "uri": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/multiple-screnarios.feature"
+  },
+  {
+    "description": "  As a user of AngularJs website\n  I should be able to add a todo",
+    "elements": [
+      {
+        "id": "using-angularjs-website;check-the-to-do-feature",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Check the To-do feature",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 142871
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/step_definitions/angularjs.step.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 131479
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/step_definitions/calculator.step.js:10"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "The AngularJS website is open",
+            "result": {
+              "status": "passed",
+              "duration": 2586998
+            },
+            "line": 7,
+            "match": {
+              "location": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/step_definitions/angularjs.step.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should be able to add a todo",
+            "result": {
+              "status": "passed",
+              "duration": 4634802090
+            },
+            "line": 8,
+            "match": {
+              "location": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/step_definitions/angularjs.step.js:20"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 53270
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/support/cucumber.hooks.js:9"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@critical",
+            "line": 5
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "using-angularjs-website",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Using AngularJs website",
+    "tags": [],
+    "uri": "/Users/adolfocabrera/Mavrix/protractor-cucumber-tests/features/todo-angularjs.feature"
+  }
+]
