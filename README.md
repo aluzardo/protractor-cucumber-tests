@@ -1,5 +1,5 @@
 # protractor-cucumber-tests
-Testing Protractor + Cucumber tests
+Testing Protractor + Cucumber tests [![Build Status](https://travis-ci.org/aluzardo/protractor-cucumber-tests.svg?branch=master)](https://travis-ci.org/aluzardo/protractor-cucumber-tests)
 
 This repository contains code for first steps on protractor [http://www.protractortest.org/#/](http://www.protractortest.org/#/)  and the tutorial [http://www.protractortest.org/#/tutorial](http://www.protractortest.org/#/tutorial)
 
