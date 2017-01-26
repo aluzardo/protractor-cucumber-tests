@@ -6,8 +6,9 @@ This repository contains code for first steps on protractor [http://www.protract
 ## Setup
 
 0. Install nodejs `brew install node`
-1. Install modules `npm install`
-3. Run all servers `npm run start-servers`
+1. Intall yarn  `brew install yarn`
+2. Install modules `yarn install`
+3. Run all servers `yarn run start-servers`
 
 ## Configuration
 
@@ -27,15 +28,15 @@ The test done using protractor, cucumber and page object.
 
 ## Run the test
 
-Run all the test with: `npm test`
+Run all the test with: `yarn test`
 
-Run only test on desktop browsers: `npm run test-desktop`
+Run only test on desktop browsers: `yarn run test-desktop`
 
-Run only test on real devices: `npm run test-real-devices`
+Run only test on real devices: `yarn run test-real-devices`
 
-Run only test on real android devices: `npm run test-android`
+Run only test on real android devices: `yarn run test-android`
 
-Run only test on real ios devices: `npm run test-ios`
+Run only test on real ios devices: `yarn run test-ios`
 
 The test can be tagged as:
 
@@ -51,7 +52,6 @@ If you want to run high or low test you need use this command at the end:
 `-- --cucumberOpts.tags @tag` Replace @tag for the tag.
 
 For example: `npm test -- --cucumberOpts.tags @low`
-#2 Update libraries and create scripts
 
 ## Links
 
