@@ -1,0 +1,12 @@
+language: node_jss
+
+node_js:
+  - "7.4.0"
+
+  before_script:
+  - npm install yarn -g  
+  - yarn install 
+  - yarn run start-local-server
+
+script:
+  - yarn run test-desktop
