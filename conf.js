@@ -15,17 +15,16 @@ exports.config = {
 
     seleniumAddress: 'http://localhost:4444/wd/hub',
     specs: ['features/*.feature'],
-    multiCapabilities: [/*
+    multiCapabilities: [
         {
             browserName: 'firefox'
-        },
-    //TODO Safari is randomly failing (necessary restart safari and selenium server)
+        }/*,
          {
          browserName: 'safari'
-         },*/
-        {
+         },
+         {
             browserName: 'chrome'
-        }/*,
+        },
         {
             browserName: 'chrome',
             // List of devices https://cs.chromium.org/chromium/src/chrome/test/chromedriver/chrome/mobile_device_list.cc
