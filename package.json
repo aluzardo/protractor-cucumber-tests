@@ -4,7 +4,7 @@
   "description": "",
   "main": "conf.js",
   "scripts": {
-    "start-local-server": "webdriver-manager update && (webdriver-manager start > /dev/null &)",
+    "start-local-server": "webdriver-manager update && (webdriver-manager start 2>/dev/null &)",
     "start-servers": "webdriver-manager update && (webdriver-manager start &) & (appium -p 4725 &)  & (appium -p 4724 &) & (appium -p 4723 &)",
     "test": "protractor conf.js && protractor conf-appium-ipad4.js && protractor conf-appium-galaxytabmini.js && protractor conf-appium-galaxytabs2.js",
     "test-desktop": "protractor conf.js",
