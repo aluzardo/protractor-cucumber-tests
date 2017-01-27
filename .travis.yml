@@ -2,8 +2,5 @@ language: node_js
 node_js:
   - "7.4.0"
 
-  before_script:
-  - yarn run start-local-server
-
 script:
-  - yarn run test-desktop
+  - yarn run start-local-server && yarn run test-desktop
