@@ -39,8 +39,6 @@ var CalculatorSteps = function () {
             }, function (error) {
                 scope.notify(next(error));
             });
-
-
     });
 
 };
