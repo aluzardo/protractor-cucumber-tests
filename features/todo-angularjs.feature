@@ -5,4 +5,4 @@ Feature: Using AngularJs website
   @critical
   Scenario: Check the To-do feature
     Given The AngularJS website is open
-    Then I should be able to add a todo
+    #Then I should be able to add a todo
