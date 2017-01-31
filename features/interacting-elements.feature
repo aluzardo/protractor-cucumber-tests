@@ -5,4 +5,4 @@ Feature: Using Calculator and check if it is working properly
   @critical
   Scenario: Should add one and two
     Given I go on "http://aluzardo.github.io/protractor-demo/"
-    Then Add "1" + "2" = "3"
+    #Then Add "1" + "2" = "3"
