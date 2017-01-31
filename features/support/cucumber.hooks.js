@@ -25,8 +25,7 @@ var hooks = function () {
         report.create({
             source: sourceJson,
             dest: outputDir,
-            name: timestamp + '-cucumber-report.html',
-            logo: 'node_modules/cucumber-html-report/logos/cucumber-logo.svg'
+            name: timestamp + '-cucumber-report.html'
         }).then(console.log).catch(console.error);
     };
 

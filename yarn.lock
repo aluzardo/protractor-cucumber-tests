@@ -1114,9 +1114,9 @@ cryptiles@2.x.x:
   dependencies:
     boom "2.x.x"
 
-cucumber-html-report@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/cucumber-html-report/-/cucumber-html-report-0.5.0.tgz#7ed9ef09cb1fae6b03ced91eb9a1f277034b2e04"
+cucumber-html-report@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/cucumber-html-report/-/cucumber-html-report-0.5.1.tgz#4799e7daf999e7ad80f9b9e901e31d28cfde124d"
   dependencies:
     atob "^2.0.3"
     mustache "^2.3.0"
